@@ -1,0 +1,257 @@
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f7f3e9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Comic dotted pattern background */
+.comic-bg {
+  background: radial-gradient(#000 1px, transparent 1px),
+              radial-gradient(#000 1px, transparent 1px);
+  background-size: 12px 12px;
+  background-position: 0 0, 6px 6px;
+  background-color: #ffdd67;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ------------------------------
+   NAVIGATION BAR
+--------------------------------*/
+.top-nav {
+  width: 100%;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 3px solid #222;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6600;
+}
+
+.active {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   HOME PAGE IMAGE SECTIONS
+--------------------------------*/
+.section-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-img {
+  width: 90%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto 30px auto;
+  border-radius: 10px;
+  border: 3px solid #222;
+}
+
+/* ------------------------------
+   SIGNUP BUTTON
+--------------------------------*/
+.btn-signup {
+  padding: 12px 25px;
+  background: #ff6600;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 3px solid #222;
+}
+
+.btn-signup:hover {
+  background: #222;
+  color: white;
+}
+
+/* ------------------------------
+   PRODUCT GRID (How It Works)
+--------------------------------*/
+.products-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.product-grid {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 3px solid #000;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+.product-title {
+  margin: 12px 0 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-price {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.add-cart-btn {
+  background: #ff6600;
+  padding: 10px 18px;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-cart-btn:hover {
+  background: #222;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+.footer {
+  background: #ffd26e;
+  margin-top: 50px;
+  padding: 25px;
+  border-top: 3px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 60px;
+}
+
+.footer-icons a {
+  margin-right: 15px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-icons a:hover {
+  color: #ff6600;
+}
+
+/* ------------------------------
+   COOKIE POPUP
+--------------------------------*/
+#cookie-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  padding: 20px;
+  width: 260px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  display: none;
+}
+
+.cookie-accept, .cookie-deny {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cookie-accept {
+  background: green;
+  color: white;
+}
+
+.cookie-deny {
+  background: red;
+  color: white;
+}
+
+/* ------------------------------
+   MOBILE STYLING
+--------------------------------*/
+@media (max-width: 650px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
