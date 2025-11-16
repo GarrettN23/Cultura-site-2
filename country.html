@@ -3,67 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultura Community Page</title>
+    <title>Country of the Month - Cultura</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
 
-<!-- NAVIGATION BAR (IDENTICAL TO COUNTRY PAGE) -->
-<header>
-    <nav class="top-nav">
-        <div class="nav-container">
-            <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
-            <span class="brand-name">Cultura</span>
-        </div>
+<!-- TOP NAV BAR (MATCHES HOME PAGE) -->
+<header class="top-nav">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
+      <span class="brand-name">Cultura</span>
+    </div>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="country.html">Country of the Month</a></li>
-            <li><a class="active" href="community.html">Community Page</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a class="active" href="country.html">Country of the Month</a></li>
+      <li><a href="community.html">Community Page</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
 </header>
 
-<!-- PAGE TITLE BANNER -->
-<section class="hero-section" style="background:#7A2CC7; padding:50px 0; text-align:center;">
-    <h1 class="page-title" style="color:white;">COMMUNITY PAGE</h1>
-</section>
-
-<!-- COMIC BORDER -->
-<div class="comic-banner"></div>
-
-<!-- COMMUNITY IMAGE GALLERY -->
-<section class="community-gallery">
-    <img src="images/community-1.png" class="comm-img" alt="Community submission 1">
-    <img src="images/community-2.png" class="comm-img" alt="Community submission 2">
-    <img src="images/community-3.png" class="comm-img" alt="Community submission 3">
-</section>
-
-<!-- COMMUNITY TEXT BLOCK -->
-<section class="community-block">
-    <img src="images/logo-large.png" class="brand-large" alt="Cultura Logo Large">
-
-    <div class="community-text-list">
-        <div class="text-bar">XXXXXXXXXX</div>
-        <div class="text-bar">XXXXXXXXXX</div>
-        <div class="text-bar">XXXXXXXXXX</div>
-        <div class="text-bar">XXXXXXXXXX</div>
-    </div>
-</section>
-
-<!-- SUBMIT BUTTON -->
-<div class="submit-section">
-    <a href="submit.html" class="submit-btn">
-        SUBMIT YOUR PICTURE NOW
-    </a>
+<!-- PAGE TITLE -->
+<div class="comic-bg">
+    <h1>COUNTRY OF THE MONTH</h1>
 </div>
 
-<!-- FOOTER (MATCHED TO COUNTRY PAGE FOOTER) -->
+<!-- COUNTRY IMAGES SECTION -->
+<section class="country-gallery">
+    <img src="images/country-dishes.png" class="country-img" alt="Traditional Dishes">
+    <img src="images/country-landmark.png" class="country-img" alt="Famous Landmark">
+    <img src="images/country-spotify.png" class="country-img" alt="Popular Music">
+    <img src="images/country-wonders.png" class="country-img" alt="Top Destinations">
+</section>
+
+<!-- DIVIDER -->
+<div style="width:70%; height:8px; background:#ccc; margin:30px auto; border-radius:5px;"></div>
+
+<!-- DESCRIPTION BLOCK -->
+<section style="background:#72c8ff; padding:25px 30px; width:80%; margin:auto; border-radius:12px; 
+                border:3px solid #000; text-align:center; font-size:18px;">
+    Explore the culture, food, music, and wonders of our featured country this month!  
+    Each Cultura Box includes authentic items, snacks, and informational surprises that allow you to experience the world from home.
+</section>
+
+<!-- SIGN UP BUTTON -->
+<div style="text-align:center; padding:40px;">
+    <a href="signup.html" class="btn-signup">SIGN UP</a>
+</div>
+
+<!-- FOOTER -->
 <footer class="footer">
     <div class="footer-left">
         <img src="images/logo-cultura.png" class="footer-logo" alt="Cultura Logo" />
