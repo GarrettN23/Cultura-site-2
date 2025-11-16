@@ -8,7 +8,7 @@
   <script defer src="script.js"></script>
 
   <style>
-    /* 👇 ADDED: Smaller home images */
+    /* 👇 Smaller home images */
     .three-images {
       display: flex;
       justify-content: center;
@@ -17,7 +17,7 @@
     }
 
     .home-img {
-      width: 230px;    /* 🔥 perfect medium size */
+      width: 230px;
       height: auto;
       border-radius: 10px;
     }
@@ -26,27 +26,33 @@
 
 <body>
 
-<!-- 🔶 TOP NAV BAR -->
-<header class="top-nav">
-  <div class="nav-container">
-    <div class="nav-left">
-      <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
-      <span class="brand-name">Cultura</span>
-    </div>
+<!-- UNIVERSAL NAV BAR WITH CART -->
+<header>
+    <nav class="top-nav">
+        <div class="nav-container">
 
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="country.html">Country of the Month</a></li>
-      <li><a href="community.html">Community Page</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </div>
+            <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
+            <span class="brand-name">Cultura</span>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="country.html">Country of the Month</a></li>
+                <li><a href="community.html">Community Page</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="cart-display">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </div>
+
+        </div>
+    </nav>
 </header>
 
 
-<!-- 🔶 HERO BANNER -->
+<!-- HERO BANNER -->
 <section class="hero">
   <h1 class="hero-title">CULTURA</h1>
   <p class="hero-subtitle">Experience the world, one box at a time.</p>
@@ -54,7 +60,7 @@
 </section>
 
 
-<!-- 🔶 MAIN IMAGES (NOW SMALLER) -->
+<!-- MAIN IMAGES (SMALLER) -->
 <section class="three-images">
   <img src="images/home-box-1.png" class="home-img" alt="Cultura Box Image 1" />
   <img src="images/home-box-2.png" class="home-img" alt="Cultura Box Image 2" />
@@ -62,7 +68,7 @@
 </section>
 
 
-<!-- 🔶 CUSTOMER REVIEWS -->
+<!-- CUSTOMER REVIEWS -->
 <section class="reviews">
   <h2>Customers Reviews</h2>
   <div class="review-line">XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
@@ -70,12 +76,13 @@
   <div class="review-line">XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
 </section>
 
+
 <div class="signup-center">
   <button class="btn-signup" onclick="window.location.href='signup.html'">Sign Up</button>
 </div>
 
 
-<!-- 🔶 FOOTER -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-left">
     <img src="images/logo-cultura.png" class="footer-logo" />
@@ -94,7 +101,7 @@
 </footer>
 
 
-<!-- 🔶 COOKIE POPUP -->
+<!-- COOKIE POPUP -->
 <div id="cookie-box" class="cookie-box">
   <p>This website uses cookies to improve your browsing experience.</p>
   <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
