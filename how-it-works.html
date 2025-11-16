@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultura – How It Works</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- 🔶 TOP NAV BAR -->
+<header class="top-nav">
+  <div class="nav-container">
+    <div class="nav-left">
+      <img src="Images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
+      <span class="brand-name">Cultura</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html" class="active">How It Works</a></li>
+      <li><a href="country.html">Country of the Month</a></li>
+      <li><a href="community.html">Community Page</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="cart-display">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </div>
+</header>
+
+
+<!-- 🔶 PAGE TITLE -->
+<section class="page-header">
+  <h1>How It Works</h1>
+</section>
+
+
+<!-- 🔶 PRODUCT GRID -->
+<section class="product-grid">
+
+  <!-- PRODUCT 1 -->
+  <div class="product-card">
+    <img src="Images/product-standardbox.png" class="product-img" />
+    <h3>Standard Box – $25</h3>
+    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="product-card">
+    <img src="Images/product-premiumbox.png" class="product-img" />
+    <h3>Premium Box – $40</h3>
+    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- PRODUCT 3 -->
+  <div class="product-card">
+    <img src="Images/product-snackpack.png" class="product-img" />
+    <h3>Snack Pack – $15</h3>
+    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- PRODUCT 4 -->
+  <div class="product-card">
+    <img src="Images/product-culturalitems.png" class="product-img" />
+    <h3>Cultural Items Box – $35</h3>
+    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+  <!-- PRODUCT 5 -->
+  <div class="product-card product-center">
+    <img src="Images/product-traveldiscount.png" class="product-img" />
+    <h3>Travel Discounts – $10</h3>
+    <button class="btn-add" onclick="addToCart()">Add to Cart</button>
+  </div>
+
+</section>
+
+
+<!-- 🔶 SIGN UP -->
+<div class="signup-center">
+  <button class="btn-signup" onclick="window.location.href='signup.html'">
+    Sign Up
+  </button>
+</div>
+
+
+<!-- 🔶 FOOTER -->
+<footer class="footer">
+  <div class="footer-left">
+    <img src="Images/logo-cultura.png" class="footer-logo" />
+    <div>
+      <strong>Cultura</strong><br>
+      Follow us on social media
+    </div>
+  </div>
+
+  <div class="footer-icons">
+    <a href="#">IG</a>
+    <a href="#">FB</a>
+    <a href="#">X</a>
+    <a href="#">SC</a>
+  </div>
+</footer>
+
+</body>
+</html>
