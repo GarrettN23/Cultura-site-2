@@ -255,3 +255,71 @@ body {
     gap: 20px;
   }
 }
+
+/* ------------------------------
+   COMMUNITY PAGE STYLES
+--------------------------------*/
+
+.community-banner {
+  background: #6924b6;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Arial Black, sans-serif;
+  letter-spacing: 3px;
+}
+
+.community-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.comm-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.community-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+.brand-large {
+  width: 220px;
+}
+
+.community-text-list .text-bar {
+  background: #d3d3d3;
+  width: 260px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.submit-section {
+  text-align: center;
+  padding: 40px;
+}
+
+.submit-btn {
+  background: #f9c949;
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 4px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.submit-btn:hover {
+  background: #ffd976;
+}
