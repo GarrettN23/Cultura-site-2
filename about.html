@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Cultura</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
-<!-- TOP NAV BAR (MATCHES HOME PAGE) -->
-<header class="top-nav">
-  <div class="nav-container">
-    <div class="nav-left">
-      <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
-      <span class="brand-name">Cultura</span>
-    </div>
+<!-- UNIVERSAL NAV BAR WITH CART -->
+<header>
+    <nav class="top-nav">
+        <div class="nav-container">
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="country.html">Country of the Month</a></li>
-      <li><a href="community.html">Community Page</a></li>
-      <li><a class="active" href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </div>
+            <img src="images/logo-cultura.png" class="nav-logo" alt="Cultura Logo" />
+            <span class="brand-name">Cultura</span>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="country.html">Country of the Month</a></li>
+                <li><a href="community.html">Community Page</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="cart-display">
+                🛒 Cart (<span id="cart-count">0</span>)
+            </div>
+
+        </div>
+    </nav>
 </header>
+
 
 <!-- PAGE TITLE -->
 <div class="comic-bg">
@@ -46,7 +54,7 @@
         </div>
 
         <div style="background:#f4a03a; padding:20px; width:240px; border-radius:12px; border:3px solid #000;">
-            The promotion of cultural understanding and global travel in an affordable way.
+            Promoting cultural understanding and global travel in an affordable way.
         </div>
 
     </div>
@@ -62,7 +70,7 @@
 <section style="background:#72c8ff; padding:25px 30px; width:80%; margin:auto; border-radius:12px; border:3px solid #000; text-align:center; font-size:18px;">
     Cultura is all about experiencing the world from home. 
     Each month, we send out boxes filled with snacks, cultural items, and more from different countries. 
-    Our goal is to help people learn, connect, and appreciate new cultures in a fun and easy way. 
+    Our goal is to help people learn, connect, and appreciate new cultures in a fun and meaningful way. 
     With Cultura, you can explore the world without ever needing a plane ticket.
 </section>
 
@@ -73,7 +81,10 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <img src="images/logo-cultura.png" class="footer-logo">
+    <div class="footer-left">
+        <img src="images/logo-cultura.png" class="footer-logo">
+        <div><strong>Cultura</strong><br>Follow us on social media</div>
+    </div>
 
     <div class="footer-icons">
         <a href="#">IG</a>
